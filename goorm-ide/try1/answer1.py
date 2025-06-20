@@ -30,5 +30,5 @@ print(df['고객만족도'].quantile(0.75))
 
 # 4. 부서별로 평균연봉을 구하고, 두번째로 평균연봉이 높은 부서의 평균연봉을 계산한다.
 # (X) sorted_df = df.groupby('부서').mean('연봉').sort_values('연봉', ascending=False)
-sorted_df = df.groupby('부서')['연봉'].mean().sort_values('연봉', ascending=False)
+sorted_df = df.groupby('부서')['연봉'].mean().sort_values(ascending=False)
 print(sorted_df)
